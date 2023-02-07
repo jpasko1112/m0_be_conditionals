@@ -12,13 +12,13 @@
 # - If the user either has a good record or is over 25 years old, they should pay full price
 # - If the user is not over 25 and has a bad driving record, they need to have someone else sign for the rental
 
-good_driving_record = true
-age =24
+good_driving_record = false 
+age = 24
 
-if good_driving_record = true && age > 25
+if good_driving_record == true && age > 25
     puts "Apply Discount"
-elsif good_driving_record = true || age > 25
+elsif good_driving_record == true || age > 25
     puts "Pay Full Price"
-else good_driving_record = false && age < 25
+elsif good_driving_record == false && age < 25
     puts "Needs Co-Signer"
 end
