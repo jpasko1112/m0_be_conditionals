@@ -10,14 +10,14 @@
   # if it is snowy, print "coat"
   # if it is icy, print "yak traks"
 
-weather = "sunny"
+weather = "snowy"
 
 if weather == "sunny"
   p "sunscreen"
 elsif weather == "rainy"
   p "umbrella"
 elsif weather == "snowy"
-  p "coat"
+  p "hot cocoa"
 elsif weather == "icy"
   p "yak traks"
 else
@@ -26,6 +26,8 @@ end
 
 # Experiment with manipulating the value held in variable 'weather'
 # to print something other than 'coat'
+
+
 
 
 ##################
@@ -43,9 +45,11 @@ end
 
 num_quarters = 0
 
+if num_quarters >= 2
 puts "I have enough money for a gumball"
+else 
 puts "I don't have enough money for a gumball"
-
+end
 
 #####################
 # Using the variables defined below, write code that will tell you
@@ -61,5 +65,19 @@ puts "I don't have enough money for a gumball"
 # Experiment with manipulating the value held within both variables
 # to make sure all above conditions output what you expect.
 
-cups_of_flour = 1
+cups_of_flour = 5
 has_sauce = true
+
+if cups_of_flour == 1 && has_sauce == true
+  p "I cannot make pizza"
+elsif cups_of_flour == 5 && has_sauce == false
+  p "I cannot make pizza"
+elsif cups_of_flour == 2 && has_sauce == true
+  p "I can make a pizza"
+elsif cups_of_flour == 3 && has_sauce == true
+  p "I can make a pizza"
+else 
+  p "I cannot make a pizza" 
+end
+
+# Confused on this last step. This should return false, but not getting # desired result. I've tried changing variable values and saving the file. I think the issue i'm running in to is that i'm entering variables for conditions that don't exist....ex. flour = 5 && sauce = true, there is no statement to represent that?
