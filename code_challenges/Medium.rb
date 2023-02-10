@@ -19,6 +19,6 @@ if good_driving_record == true && age > 25
     puts "Apply Discount"
 elsif good_driving_record == true || age > 25
     puts "Pay Full Price"
-elsif good_driving_record == false && age < 25
+else
     puts "Needs Co-Signer"
 end
